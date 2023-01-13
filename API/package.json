@@ -1,0 +1,16 @@
+{
+  "name": "api_rest",
+  "version": "1.0.0",
+  "description": "Node.js API REST com Express e MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
