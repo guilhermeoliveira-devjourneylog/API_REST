@@ -9,3 +9,11 @@
  cd API 
  npm install nodemon@2.0.15 -D
 
+## Step three
+  Install framework Express
+  npm install express@4.17.3
+  Implementação
+
+## Step four
+  Projeto vendas de produtos
+  CRUD  
