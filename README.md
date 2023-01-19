@@ -1,19 +1,24 @@
-# API_REST
- Node.js API REST com Express e MongoDB
+# API RESTful com Node.js, Express e MongoDB
+Este projeto tem como objetivo explorar o poder do Node.js através da criação de uma API RESTful utilizando o framework Express e o banco de dados MongoDB. Com exemplos práticos, você poderá descobrir a facilidade de criar endpoints e conectar-se a um banco de dados MongoDB.
 
-## Step one 
- Criando servidor local
+## Passo 1: Criando um servidor local
+Neste primeiro passo, será criado um servidor local para rodar a API.
 
-## Step two
- * Install depedencia de desenvolvimento 
- * cd API 
- * npm install nodemon@2.0.15 -D
+## Passo 2: Instalando as dependências de desenvolvimento
+Antes de iniciar a implementação da API, é necessário instalar as dependências de desenvolvimento. Para isso, execute os seguintes comandos no terminal:
 
-## Step three
-  * Install framework Express
-  * npm install express@4.17.3
-  * Implementação
+```cd API```
+```npm install nodemon@2.0.15 -D```
 
-## Step four
-  * Projeto vendas de produtos
-  * CRUD  
+## Passo 3: Instalando o framework Express e implementando a API
+Neste passo, será instalado o framework Express e realizada a implementação da API. Para instalar o Express, execute o comando:
+
+```npm install express@4.17.3```
+
+## Passo 4: Projeto Dashboard de Produtos
+Por fim, será criado um projeto de exemplo para aplicar as funcionalidades de CRUD (Create, Read, Update e Delete).
+
+Observação : Este projeto é apenas um exemplo básico, e você pode expandir e adaptá-lo de acordo com suas necessidades. Certifique-se de seguir as boas práticas de desenvolvimento de software ao construir sua API.
+
+
+
