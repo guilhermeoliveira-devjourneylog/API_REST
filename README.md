@@ -20,5 +20,10 @@ Por fim, será criado um projeto de exemplo para aplicar as funcionalidades de C
 
 Observação : Este projeto é apenas um exemplo básico, e você pode expandir e adaptá-lo de acordo com suas necessidades. Certifique-se de seguir as boas práticas de desenvolvimento de software ao construir sua API.
 
-
-
+## Passo 5: Conectando com MongoDB
+Criar conta no MongoDb Atlas
+Gerar database
+instalar mongoose
+Criar pasta config mais arquivo dbConnect.js importar mongoose para o arquivo
+```npm install mongoose@6.8.4```
+```npm run dev```

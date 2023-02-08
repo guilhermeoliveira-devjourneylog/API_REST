@@ -1,20 +1,31 @@
 import express from "express";
+import db from "./config/dbConnect.js";
+import produtos from "./models/Produto.js";
+
+db.on("error", console.log.bind(console, 'Erro de conexão'))
+db.once("open", () => {
+  console.log('conexão com banco feita com sucesso')
+})
+
 
 const app = express();
 
 app.use(express.json())
 
-const produtos = [
+/* const produtos = [
   {id: 1, "nome": "beterraba"},
   {id:2, "nome": "maçã"}
-]
+] */
 
 app.get('/', (req, res) => {
   res.status(200).send('Dashboard');
 })
 
 app.get('/Produtos', (req, res) => {
-  res.status(200).json(produtos);
+  produtos.find((err, produtos) => {
+    res.status(200).json(produtos)
+  })
+
 })
 
 app.get('/Produtos/:id', (req, res) => {
