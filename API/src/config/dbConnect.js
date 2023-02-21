@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://DevJourneyLog:Developer317297@cluster0.985xdqp.mongodb.net/Dashboard_Products");
+mongoose.connect("mongodb+srv://Developer:Developer317297@cluster0.en5qfwo.mongodb.net/dashboard-products");
 let db = mongoose.connection;
 
 
