@@ -3,15 +3,19 @@ import produtos from "../models/Produto.js";
 class ProdutoController {
 
   static listarProdutos = (req, res) => {
-  produtos.find((err, produtos) => {
-      res.status(200).json(produtos)
+  produtos.find()
+      .populate('tipo')
+      .exec((err, produtos) => {
+      res.status(200).json(produtos) 
     })
   }
 
   static listarProdutoPorId = (req, res) => {
     const id = req.params.id;
 
-    produtos.findById(id, (err, produtos) => {
+    produtos.findById(id)
+    .populate('tipo', 'nome_do_tipo')
+    .exec((err, produtos) => {
       if(err) {
         res.status(400).send({message: `${err.message} - Id do produto não localizado.`})
       } else {
@@ -56,6 +60,16 @@ class ProdutoController {
       }
     })
   }
+
+  static listarProdutoPorTipo = (req, res) => {
+    const nome_do_produto = req.query.nome_do_produto
+
+    produtos.find({'nome_do_produto': nome_do_produto}, {}, (err, produtos) => {
+      res.status(200).send(produtos);
+
+    })
+  }
+
 
 }
 
